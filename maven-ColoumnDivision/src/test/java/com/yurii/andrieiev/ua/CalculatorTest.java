@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CalculatorTest  {
 
     @Test
-    void calculatorShouldReturn() {
+    void calculatorShouldReturnOneCurrentResult() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(20, 10);
         List<CurrentResult> expectedCurrentResults = List.of(new CurrentResult(20, 20, 0));
@@ -20,7 +20,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnThirdCase() {
+    void calculatorShouldReturnOneCurrentResultWithoutZero() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(36000, 36);
         List<CurrentResult> expectedCurrentResults = List.of(new CurrentResult(36, 36, 0));
@@ -28,7 +28,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnFourthCase() {
+    void calculatorShouldReturnSevenCurrentResults() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(347343203, 21);
         DivisionResult divisionResult = calculator.divide(347343203, 21);
@@ -43,7 +43,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnFifthCase() {
+    void calculatorShouldReturnComparisonBetweenCurrentResults() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(347343203, 21);
         DivisionResult divisionResult = calculator.divide(347343203, 21);
@@ -58,7 +58,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnSixthCase() {
+    void calculatorShouldReturnThreeTheSameCurrentResults() {
         Calculator calculator = new Calculator();
         List<CurrentResult>expectedCurrentResults = List.of(new CurrentResult(36, 36, 0),
                 new CurrentResult(36, 36, 0),

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PaintProccessDivisionTest {
 
     @Test
-    public void paintTest(){
+    public void paintDivisionResultWithThreeTheSameCurrentResults(){
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"363636"+"|"+"36"+System.lineSeparator());
         firstPicture.append(" "+"36"+ "    "+ "|----"+System.lineSeparator());
@@ -31,7 +31,7 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintSecondTest() {
+    public void paintDivisionResultWithTwoCurrentResults() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"534"+"|"+"12"+System.lineSeparator());
         firstPicture.append(" "+"48"+ " "+ "|----"+System.lineSeparator());
@@ -50,7 +50,7 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintThirdTest() {
+    public void paintDivisionResultWithTwoCurrentResultsWithRemainder() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"88888"+"|"+"88"+System.lineSeparator());
         firstPicture.append(" "+"88"+ "   "+ "|----"+System.lineSeparator());
@@ -69,7 +69,7 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintFourthTest() {
+    public void paintDivisionResultsWithSixCurrentResults() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"87534363"+"|"+"7"+System.lineSeparator());
         firstPicture.append(" "+"7"+ "       "+ "|----"+System.lineSeparator());
@@ -104,7 +104,7 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintFifthTest() {
+    public void paintDivisionResultWithFourCurrentResults() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"36281"+"|"+"21"+System.lineSeparator());
         firstPicture.append(" "+"21"+ "   "+ "|----"+System.lineSeparator());
