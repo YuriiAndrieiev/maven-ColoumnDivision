@@ -50,7 +50,6 @@ public class PaintProccessDivision {
             i++;
             int previousDiffenence = previousElement.getSpaceDifference();
             CurrentResult currentResult = results.get(i);
-            int spaceDifference = currentResult.getSpaceDifference();
             CurrentResult element = (results.get(i));
             int currentDividendInt = element.getCurrentDividendInt();
             int numberSubtracted = element.getNumberSubtracted();

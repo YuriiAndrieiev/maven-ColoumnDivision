@@ -1,7 +1,6 @@
 package com.yurii.andrieiev.ua;
 
 import org.junit.jupiter.api.Test;
-//import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CalculatorTest  {
 
     @Test
-    void calculatorShouldReturnOneCurrentResult() {
+    void divideShouldReturnCorrectOutputWhenWeHaveDividendLengthAsDivider() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(20, 10);
         List<CurrentResult> expectedCurrentResults = List.of(new CurrentResult(20, 20, 0));
@@ -20,7 +19,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnOneCurrentResultWithoutZero() {
+    void divideShouldReturnOneCurrentResultWithoutZeroWhenDividendIsMultipleOfDivider() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(36000, 36);
         List<CurrentResult> expectedCurrentResults = List.of(new CurrentResult(36, 36, 0));
@@ -28,7 +27,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnSevenCurrentResults() {
+    void divideShouldReturnSevenCurrentResultsTheRightPlacesWhenThereAreVariousCurrentResults() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(347343203, 21);
         DivisionResult divisionResult = calculator.divide(347343203, 21);
@@ -43,7 +42,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnComparisonBetweenCurrentResults() {
+    void divideShouldReturnComparisonBetweenCurrentResultsWhenThereAreLotsOfCurrentResults() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(347343203, 21);
         DivisionResult divisionResult = calculator.divide(347343203, 21);
@@ -58,7 +57,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void calculatorShouldReturnThreeTheSameCurrentResults() {
+    void divideShouldReturnOutputWithThreeTheSameCurrentResultsWhenDividendConsistsOfRepeatingNumbers() {
         Calculator calculator = new Calculator();
         List<CurrentResult>expectedCurrentResults = List.of(new CurrentResult(36, 36, 0),
                 new CurrentResult(36, 36, 0),
