@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PaintProccessDivisionTest {
 
     @Test
-    public void paintFullPictureShouldReturnOutputWithThreeTheSameCurrentResults(){
+    public void paintFullPictureShouldReturnOutputWithTheSameCurrentResultsWhenDividendHasNumbersAsDivider(){
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"363636"+"|"+"36"+System.lineSeparator());
         firstPicture.append(" "+"36"+ "    "+ "|----"+System.lineSeparator());
@@ -31,7 +31,8 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintFullPictureShouldReturnOutPutWithTwoCurrentResultsAndRemainder() {
+    public void
+    paintFullPictureShouldReturnOutPutWithTwoCurrentResultsAndRemainderWhenDividendConsistsOfThreeFiguresDividerOfTwo() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"534"+"|"+"12"+System.lineSeparator());
         firstPicture.append(" "+"48"+ " "+ "|----"+System.lineSeparator());
@@ -50,7 +51,8 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintFullPictureShouldReturnOutPutWithTwoTheSameCurrentResultsAndRemovedRemainder() {
+    public void
+    paintFullPictureShouldReturnOutPutWithTwoTheSameCurrentResultsAndRemovedRemainderWhenLastNumberShortenAsDivider() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"88888"+"|"+"88"+System.lineSeparator());
         firstPicture.append(" "+"88"+ "   "+ "|----"+System.lineSeparator());
@@ -69,7 +71,7 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintFullPictureShouldReturnOutputWithSixCurrentResults() {
+    public void paintFullPictureShouldReturnOutputWithSixCurrentResultsWhenDividendIsMuchLongerThanDivider() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"87534363"+"|"+"7"+System.lineSeparator());
         firstPicture.append(" "+"7"+ "       "+ "|----"+System.lineSeparator());
@@ -104,7 +106,7 @@ public class PaintProccessDivisionTest {
     }
 
     @Test
-    public void paintFullPictureReturnOutputWithFourCurrentResults() {
+    public void paintFullPictureReturnOutputWithFourCurrentResultsWhenDividendIsLongerAThreeFiguresThanDividend() {
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"36281"+"|"+"21"+System.lineSeparator());
         firstPicture.append(" "+"21"+ "   "+ "|----"+System.lineSeparator());

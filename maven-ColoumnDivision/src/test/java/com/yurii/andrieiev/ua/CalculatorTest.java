@@ -27,7 +27,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void divideShouldReturnSevenCurrentResultsWithVariousLengthOnTheRightPlaces() {
+    void divideShouldReturnSevenCurrentResultsTheRightPlacesWhenThereAreVariousCurrentResults() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(347343203, 21);
         DivisionResult divisionResult = calculator.divide(347343203, 21);
@@ -42,7 +42,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void divideShouldReturnComparisonBetweenCurrentResults() {
+    void divideShouldReturnComparisonBetweenCurrentResultsWhenThereAreLotsOfCurrentResults() {
         Calculator calculator = new Calculator();
         DivisionResult expectedDivisionResult = calculator.divide(347343203, 21);
         DivisionResult divisionResult = calculator.divide(347343203, 21);
@@ -57,7 +57,7 @@ public class CalculatorTest  {
     }
 
     @Test
-    void divideShouldReturnOutputWithThreeTheSameCurrentResultsWhen() {
+    void divideShouldReturnOutputWithThreeTheSameCurrentResultsWhenDividendConsistsOfRepeatingNumbers() {
         Calculator calculator = new Calculator();
         List<CurrentResult>expectedCurrentResults = List.of(new CurrentResult(36, 36, 0),
                 new CurrentResult(36, 36, 0),
