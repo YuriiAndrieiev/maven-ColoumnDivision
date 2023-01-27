@@ -9,7 +9,7 @@ import static junit.framework.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class CalculatorTest {
+public class CalculatorTest  {
 
     @Test
     void calculatorShouldReturn() {

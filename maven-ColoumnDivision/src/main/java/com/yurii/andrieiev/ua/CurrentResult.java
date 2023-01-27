@@ -5,7 +5,7 @@ import java.util.Objects;
 public class CurrentResult {
     private int currentDividendInt;
     private int numberSubtracted;
-    private int spaceDifference;
+    private int  spaceDifference;
 
     public CurrentResult(int currentDividendInt, int numberSubtracted, int spaceDifference) {
         this.currentDividendInt = currentDividendInt;

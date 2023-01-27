@@ -3,7 +3,7 @@ package com.yurii.andrieiev.ua;
 import java.util.List;
 import java.util.Objects;
 
-    public class DivisionResult {
+    public class DivisionResult  {
         private int dividend ;
         private int divider ;
         private int finalResult;

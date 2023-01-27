@@ -45,7 +45,7 @@ public class Calculator {
                     }
                 }
             }
-            int currentDividendInt = Integer.parseInt(String.valueOf(currentDividend));
+            int currentDividendInt =  Integer.parseInt(String.valueOf(currentDividend));
             int dividerResult = currentDividendInt % divider;
             int numberSubtracted = currentDividendInt - dividerResult;
             int spaceDifference = 0;

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PaintProccessDivisionTest {
 
     @Test
-    public void paintTest() {
+    public void paintTest(){
         StringBuilder firstPicture = new StringBuilder();
         firstPicture.append("_"+"363636"+"|"+"36"+System.lineSeparator());
         firstPicture.append(" "+"36"+ "    "+ "|----"+System.lineSeparator());

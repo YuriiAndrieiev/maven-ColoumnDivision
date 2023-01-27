@@ -10,7 +10,7 @@ public class PaintProccessDivision {
         List<CurrentResult> results = divisionResult.getCurrentResults();
         CurrentResult currentResult0 = (results.get(0));
         int firstCurrentDividendInt = currentResult0.getCurrentDividendInt();
-        int firstNumberSubtracted = currentResult0.getNumberSubtracted();
+        int firstNumberSubtracted =  currentResult0.getNumberSubtracted();
         int firstSpaceDiffernce = firstCurrentDividendInt - firstNumberSubtracted;
         pictureHead.append("_").append(dividend).append("|").append(divisionResult.getDivider())
                 .append(System.lineSeparator()).append(" ").append(firstNumberSubtracted)
